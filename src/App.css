@@ -132,6 +132,13 @@ body{
   border-radius: 10px 0 0 10px ;
 }
 
+header{
+  border: solid 1px red;
+  display: flex;
+  align-items: center;
+  padding: 0 .5em;
+}
+
 @media screen and (max-width: 650px) {
   .recipeCard{
     flex-direction: column;
