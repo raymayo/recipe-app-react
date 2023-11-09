@@ -63,12 +63,6 @@ body{
   margin: 0 20px;
   background-color: #fff;
 }
-.recipeCard img{
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px 0 0 10px ;
-}
 
 .recipeInfoBox{
   display: flex;
@@ -90,10 +84,12 @@ body{
 }
 
 .recipeInfo{
-  background-color: black;
+  /* background-color: black; */
   padding: 5px 10px;
   border-radius: 50px;
-  color: white;
+  color: black;
+  border: solid 1px black;
+  background-color: rgb(255, 255, 255);
 }
 
 .tags{
@@ -103,7 +99,6 @@ body{
 
 #recipeSearchBox{
   margin: 1em;
-  border: solid 1px red;
   display: flex;
   justify-content: center;
 }
@@ -117,11 +112,37 @@ body{
 }
 
 #recipeSearchBtn{
-  padding: .5em 1em;
+  padding: .5em .8em;
   border-radius: 0 10em 10em 0;
   border: solid 1px black;
   font-size: 1em;
   cursor: pointer;
   background-color: black;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipeImage{
+  border-right: 1px solid black ;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px ;
+}
+
+@media screen and (max-width: 650px) {
+  .recipeCard{
+    flex-direction: column;
+  }
+
+  .recipeImage{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid black ;
+  }
+
 }

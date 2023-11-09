@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
+import { HiMagnifyingGlass } from 'react-icons/hi2';
 import '../styles/RecipeSearch.css';
 
 function RecipeSearch() {
@@ -50,7 +51,7 @@ function RecipeSearch() {
 				/>
 
 				<button id="recipeSearchBtn" onClick={handleSearchClick}>
-					Search
+        <HiMagnifyingGlass size={20}/>
 				</button>
 			</div>
 
@@ -60,7 +61,7 @@ function RecipeSearch() {
 				<div className="container">
 					{recipes.map((recipe, index) => (
 						<div key={index} className="recipeCard">
-							<img src={recipe.recipe.image} alt={recipe.recipe.label} />
+							<img className='recipeImage' src={recipe.recipe.image} alt={recipe.recipe.label} />
 							<div className="recipeInfoBox">
 								<h1>{recipe.recipe.label}</h1>
 								<div className="tags">
