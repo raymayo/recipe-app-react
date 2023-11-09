@@ -3,9 +3,11 @@
 import React from 'react';
 import { HiMagnifyingGlass } from 'react-icons/hi2';
 
+
 const RecipeSearchInput = ({ query, setQuery, handleSearchClick }) => {
   return (
     <div id="recipeSearchBox">
+
       <input
         type="text"
         id="recipeSearchInput"
@@ -16,6 +18,7 @@ const RecipeSearchInput = ({ query, setQuery, handleSearchClick }) => {
       <button id="recipeSearchBtn" onClick={handleSearchClick}>
         <HiMagnifyingGlass size={20} />
       </button>
+      
     </div>
   );
 };

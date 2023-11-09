@@ -46,7 +46,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Inter;
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -74,7 +74,7 @@ body{
 
 .container{
   /* background: salmon; */
-  margin: auto;
+  margin: 2em auto;
   width: 100%;
   height: 100%;
   display: flex;
@@ -87,8 +87,8 @@ body{
   /* background-color: black; */
   padding: 5px 10px;
   border-radius: 50px;
-  color: black;
-  border: solid 1px black;
+  color: #111111;
+  border: solid 1px #111111;
   background-color: rgb(255, 255, 255);
 }
 
@@ -98,27 +98,26 @@ body{
 }
 
 #recipeSearchBox{
-  margin: 1em;
   display: flex;
   justify-content: center;
+  width: min(100%,500px);
 }
 
 #recipeSearchInput{
   padding: .5em 1em;
-  width: 400px;
-  border: solid 1px black;
+  border: solid 1px #111111;
   font-size: 1em;
   border-radius: 10em 0 0 10em;
+  width: 100%;
+  background-color: white;
 }
 
 #recipeSearchBtn{
   padding: .5em .8em;
   border-radius: 0 10em 10em 0;
-  border: solid 1px black;
-  font-size: 1em;
+  border: solid 1px #111111;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,10 +132,21 @@ body{
 }
 
 header{
-  border: solid 1px red;
+  width: 100%;
+  background-color: #111111;
   display: flex;
   align-items: center;
-  padding: 0 .5em;
+  padding: .8em 1em;
+  justify-content: space-between;
+  gap: 1em;
+  position: sticky;
+  top: 0;
+  color: white;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 650px) {
@@ -150,6 +160,10 @@ header{
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     border-bottom: 1px solid black ;
+  }
+
+  #logo h1{
+    display: none;
   }
 
 }
