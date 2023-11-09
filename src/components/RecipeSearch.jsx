@@ -64,13 +64,6 @@ function RecipeSearch() {
 							<img className='recipeImage' src={recipe.recipe.image} alt={recipe.recipe.label} />
 							<div className="recipeInfoBox">
 								<h1>{recipe.recipe.label}</h1>
-								<div className="tags">
-									<p className="recipeInfo">
-										{recipe.recipe.calories.toFixed(0)} cal
-									</p>
-									<p className="recipeInfo">{recipe.recipe.cuisineType}</p>
-								</div>
-								<p>{recipe.recipe.healthLabels.join(' • ')}</p>
 							</div>
 						</div>
 					))}
