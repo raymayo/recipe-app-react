@@ -2,12 +2,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { HiMagnifyingGlass } from 'react-icons/hi2';
+import { HiFunnel } from 'react-icons/hi2';
+// HiChevronDown
 
 
 const RecipeSearchInput = ({ query, setQuery, handleSearchClick }) => {
   return (
     <div id="recipeSearchBox">
-
+      <button id='recipeSearchDropdown'>
+      <HiFunnel size={20} />
+      </button>
       <input
         type="text"
         id="recipeSearchInput"
