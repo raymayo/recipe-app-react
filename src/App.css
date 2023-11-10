@@ -169,11 +169,11 @@ header{
 .icon{
   display: flex;
   align-items: center;
-  color: var(--white)
+  color: #fff
 }
 
 #logo{
-  color: var(--white);
+  color: #fff;
 }
 
 input[type="text"], input[type="password"], textarea {
