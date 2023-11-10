@@ -10,7 +10,7 @@ const Header = ({ query, setQuery, handleSearchClick }) => {
   return (
     <header>
       <div className='icon'>
-        <PiShrimpFill size={40}/>
+        <PiShrimpFill size={40} id='logo'/>
         <h1> PrawnPal</h1>
         </div>
       <RecipeSearchInput query={query} setQuery={setQuery} handleSearchClick={handleSearchClick} />
