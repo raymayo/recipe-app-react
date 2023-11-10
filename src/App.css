@@ -125,7 +125,6 @@ body{
 #recipeSearchBtn{
   padding: .5em .8em;
   border-radius: 0 .5em .5em 0;
-  border: solid 1px #111111;
   cursor: pointer;
   background-color: white;
   display: flex;
