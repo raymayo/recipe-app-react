@@ -108,7 +108,6 @@ body{
 #recipeSearchDropdown{
   padding: .5em .8em;
   border-radius: .5em 0 0 .5em;
-  border: solid 1px #111111;
   cursor: pointer;
   background-color: white;
   display: flex;
