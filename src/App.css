@@ -120,6 +120,7 @@ body{
   font-size: 1em;
   width: 100%;
   background-color: white;
+  border: none;
 }
 
 #recipeSearchBtn{
