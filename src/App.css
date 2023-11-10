@@ -173,7 +173,7 @@ header{
 }
 
 #logo{
-  color: var(--white);
+  color: var(--black);
 }
 
 input[type="text"], input[type="password"], textarea {
