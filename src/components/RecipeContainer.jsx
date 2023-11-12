@@ -3,6 +3,8 @@
 import React from 'react';
 
 const RecipeContainer = ({ loading, recipes }) => {
+
+	
 	return (
 		<div>
 			{loading ? (
@@ -13,21 +15,24 @@ const RecipeContainer = ({ loading, recipes }) => {
 						<div key={index} className="recipeCard">
 							<img
 								className="recipeImage"
-								src={recipe.recipe.image}
-								alt={recipe.recipe.label}
+								src={recipe.image}
+								alt={recipe.title}
 							/>
 							<div className="recipeInfoBox">
-								<h1>{recipe.recipe.label}</h1>
+								<h1>{recipe.title}</h1>
 								<div className="tags">
 									<p className="recipeInfo">
-										{String(recipe.recipe.dishType).charAt(0).toUpperCase() +
-											String(recipe.recipe.dishType).slice(1)}
+										asdasdasda
+										{/* {String(recipe.dishType).charAt(0).toUpperCase() +
+											String(recipe.dishType).slice(1)} */}
 									</p>
-                  <p className="recipeInfo">
-										{recipe.recipe.calories.toFixed(0)} <span>cal</span>
+									<p className="recipeInfo">
+										{/* {recipe.calories.toFixed(0)} */}
+										1212
+										<span>cal</span>
 									</p>
 								</div>
-								<p>{recipe.recipe.healthLabels.join(' • ')}</p>
+								{/* <p>{recipe.healthLabels.join(' • ')}</p> */}
 							</div>
 						</div>
 					))}

@@ -72,7 +72,7 @@ body{
 
 .recipeCard{
   border-radius: .5em;
-  width:800px;
+  width:500px;
   display: flex;
   flex-direction: row;
   color: var(--black);

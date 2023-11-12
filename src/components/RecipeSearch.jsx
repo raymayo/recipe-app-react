@@ -9,14 +9,13 @@ const RecipeSearch = () => {
   const [loading, setLoading] = useState(false);
   const [prevQuery, setPrevQuery] = useState('');
 
-  const APP_ID = '479211e1';
-  const APP_KEY = '1738191134fae3bfdf63b016caa4d9c3';
+  const api_KEY = import.meta.env.VITE_API_KEY;
 
   const fetchData = async () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
+        `https://api.spoonacular.com/recipes/complexSearch?apiKey=${api_KEY}&query=${query}&cuisine=true`
       );
 
       if (!response.ok) {
@@ -24,7 +23,8 @@ const RecipeSearch = () => {
       }
 
       const data = await response.json();
-      setRecipes(data.hits);
+      setRecipes(data.results);
+      console.log(data.results);
     } catch (error) {
       console.error('Error fetching data:', error);
     } finally {
